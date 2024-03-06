@@ -1,0 +1,165 @@
+.baseWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+.searchTitle {
+  margin: 0;
+}
+
+.search {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 0;
+  transition: 0.5s ease;
+}
+
+.input:disabled {
+  background-color: rgba(77, 72, 72, 0.253);
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pagesWrapper {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.pageButton {
+  font-size: 14px;
+  width: 170px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.pageButton:disabled {
+  background-color: rgba(77, 72, 72, 0.253);
+  transition: none;
+  opacity: 1;
+  cursor: default;
+}
+
+.button {
+  width: 100px;
+  height: 26px;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.button:disabled {
+  background-color: rgba(77, 72, 72, 0.253);
+  transition: none;
+  opacity: 1;
+  cursor: default;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.pageButton:hover {
+  opacity: 1;
+}
+
+.loaderWrapper {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 200px;
+}
+
+.productsWrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.item {
+  padding: 8px 2px 8px;
+  border: 2px rgba(77, 72, 72, 0.253) solid;
+  border-radius: 8px;
+  width: 280px;
+  height: 395px;
+  box-sizing: border-box;
+  transition: 0.4s ease;
+}
+
+.item:hover {
+  border-color: rgba(0, 0, 0, 0.329);
+}
+
+.itemInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 245px;
+}
+
+.itemId {
+  color: rgb(185, 185, 180);
+  margin: 15px 0 0 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.itemName {
+  font-weight: 600;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.itemPrice {
+  margin: 5px 0 0 0;
+  font-weight: 500;
+}
+.itemBrand {
+  color: rgba(39, 35, 30, 0.616);
+  margin: 5px 0 0 0;
+  font-weight: 500;
+}

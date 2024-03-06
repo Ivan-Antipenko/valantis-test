@@ -1,0 +1,26 @@
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: white;
+  gap: 15px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.menu:hover {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
